@@ -44,6 +44,6 @@
     }
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test && make lint"
   }
 }
