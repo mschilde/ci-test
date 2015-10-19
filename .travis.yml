@@ -5,8 +5,8 @@ notifications:
   email:
     on_success: change
     on_failure: change
-  slack: comtravo:kWCdAX0Gl9IY6QMLjEAqWV9Q
+  slack:
+    rooms:
+      - comtravo:kWCdAX0Gl9IY6QMLjEAqWV9Q
     on_success: change
     on_failure: change
-after_script:
-  make lint
