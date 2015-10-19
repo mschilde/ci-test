@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 0.10
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+  slack:
+    rooms:
+      - comtravo:kWCdAX0Gl9IY6QMLjEAqWV9Q
+    on_success: change
+    on_failure: change
