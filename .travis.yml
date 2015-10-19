@@ -2,7 +2,11 @@ language: node_js
 node_js:
   - 0.10
 notifications:
-  email: change
-  slack: comtravo:kWCdAX0Gl9IY6QMLjEAqWV9Q change
+  email:
+    on_success: change
+    on_failure: change
+  slack: comtravo:kWCdAX0Gl9IY6QMLjEAqWV9Q
+    on_success: change
+    on_failure: change
 after_script:
   make lint
