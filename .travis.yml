@@ -4,3 +4,5 @@ node_js:
 notifications:
   email: change
   slack: comtravo:kWCdAX0Gl9IY6QMLjEAqWV9Q change
+after_script:
+  make lint
