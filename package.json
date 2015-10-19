@@ -1,0 +1,48 @@
+{
+  "name": "ci-test",
+  "version": "0.0.1",
+  "description": "Test service for deployment, CI, provisioning etc.",
+  "main": "index.coffee",
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "express": "4.13.3"
+  },
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "coffeelint": "^1.13.0",
+    "mocha": "^2.0.1",
+    "should": "^7.1.0",
+    "sinon": "^1.12.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mschilde/ci-test.git"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "*"
+  },
+  "coffeelintConfig": {
+    "no_trailing_whitespace": {
+      "level": "warn",
+      "value": 4
+    },
+    "no_empty_param_list": {
+      "level": "error"
+    },
+    "max_line_length": {
+      "value": 100,
+      "level": "warn"
+    }
+  },
+  "config": {
+    "blanket": {
+      "data-cover-only": "lib/",
+      "data-cover-never": "node_modules/",
+      "loader": "./node-loaders/coffee-script"
+    }
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}

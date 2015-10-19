@@ -1,0 +1,7 @@
+--require should
+--reporter spec
+--compilers coffee:coffee-script/register
+--ui bdd
+--growl
+--globals result
+--timeout 2000

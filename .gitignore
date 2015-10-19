@@ -1,0 +1,30 @@
+
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.sublime*
+
+.gradle
+build
+pids
+logs
+results
+lib-cov
+node_modules
+
+# ignore vagrant files #
+# -------------------- #
+.vagrant
+vagrant
+chef.json
+
+# ignore config files #
+# ------------------- #
+config/*.json
+
+# test code coverage report #
+test-coverage.html
