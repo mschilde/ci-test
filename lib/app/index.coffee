@@ -2,7 +2,7 @@ express = require 'express'
 
 app = express()
 
-a = ()->
+#a = ()->
 
 app.get '/', (req, res) ->
   res.send '\nHello World!\n\n'
