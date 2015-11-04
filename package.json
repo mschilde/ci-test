@@ -12,7 +12,8 @@
     "coffeelint": "^1.13.0",
     "mocha": "^2.0.1",
     "should": "^7.1.0",
-    "sinon": "^1.12.1"
+    "sinon": "^1.12.1",
+    "travis-lint": "*"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,6 @@
     }
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test && make lint"
   }
 }
